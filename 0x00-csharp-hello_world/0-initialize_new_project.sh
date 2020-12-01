@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-
-sudo dotnet new console -o 0-new_project
+sudo mkdir 0-new_project
+sudo cd 0-new_project
+dotnet new console
