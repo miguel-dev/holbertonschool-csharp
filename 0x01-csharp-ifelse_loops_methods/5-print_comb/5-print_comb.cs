@@ -4,25 +4,27 @@ class Program
 {
     static void Main(string[] args)
     {
+	string number = null;
         for (int i = 0; i < 100; i++)
 	{
 	    if (i < 10)
             {
-	        Console.Write($"0{i}");
+	        number = string.Format($"0{i}", i);
 	    }
 	    else
 	    {    
-                Console.Write(i);
+                number = Convert.ToString(i);
 	    }
 
 	    if (i < 99)
             {
-                Console.Write(", ");
+                number += ", ";
             }
 	    else
 	    {
-                Console.WriteLine();
+                number += "\n";
             }
+	    Console.Write(number);
 	}
     }
 }
