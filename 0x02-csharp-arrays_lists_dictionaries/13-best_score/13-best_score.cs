@@ -4,7 +4,11 @@ class Dictionary
 {
     public static string BestScore(Dictionary<string, int> myList)
     {
-        string bestKey = "None";
+        if (myList.Count == 0)
+        {
+            return "None";
+        }
+        string bestKey = String.Empty;
         int bestValue = 0;
         foreach (KeyValuePair<string, int> pair in myList)
         {
