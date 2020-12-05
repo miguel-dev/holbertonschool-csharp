@@ -12,7 +12,7 @@ class Dictionary
         int bestValue = 0;
         foreach (KeyValuePair<string, int> pair in myList)
         {
-            if (pair.Value > bestValue)
+            if (pair.Value >= bestValue)
             {
                 bestValue = pair.Value;
                 bestKey = pair.Key;
