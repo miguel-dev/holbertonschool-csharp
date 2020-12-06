@@ -10,7 +10,7 @@ class MyStack
         bool contains = aStack.Contains(search);
         Console.WriteLine($"Number of items: {number}", number.ToString());
         Console.WriteLine($"Top item: {top}", top);
-        Console.WriteLine($"Stack contains {search}: {contains}", search, contains.ToString());
+        Console.WriteLine($"Stack contains \"{search}\": {contains}", search, contains.ToString());
 
         Stack<string> copy = new Stack<string>(aStack);
         if (contains)
