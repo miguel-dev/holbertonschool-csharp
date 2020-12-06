@@ -6,9 +6,16 @@ class MyStack
     public static Stack<string> Info(Stack<string> aStack, string newItem, string search)
     {
         int number = aStack.Count;
+        Console.WriteLine($"Number of items: {number}", number.ToString());
+        if (aStack.Count == 0)
+        {
+            Console.WriteLine("Stack is empty");
+            return aStack;
+        }
+        
         string top = aStack.Peek();
         bool contains = aStack.Contains(search);
-        Console.WriteLine($"Number of items: {number}", number.ToString());
+
         Console.WriteLine($"Top item: {top}", top);
         Console.WriteLine($"Stack contains \"{search}\": {contains}", search, contains.ToString());
 
