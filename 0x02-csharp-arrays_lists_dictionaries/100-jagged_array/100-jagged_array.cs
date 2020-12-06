@@ -15,11 +15,11 @@ class Program
             for (int j = 0; j < length; j++)
             {
                 Console.Write(jaggedArray[i][j]);
-		if (j != length - 1)
-		{
-			Console.Write(" ");
-		}
-	    }
+		        if (j != length - 1)
+		        {
+			        Console.Write(" ");
+                }
+            }
             Console.WriteLine();
         }
     }
