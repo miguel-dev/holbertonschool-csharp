@@ -10,6 +10,7 @@ class MyStack
         if (aStack.Count == 0)
         {
             Console.WriteLine("Stack is empty");
+            aStack.Push(newItem);
             return aStack;
         }
         
