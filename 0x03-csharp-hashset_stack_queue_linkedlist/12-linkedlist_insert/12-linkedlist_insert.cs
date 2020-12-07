@@ -9,7 +9,18 @@ class LList
         {
             return myLList.AddFirst(n);
         }
-        LinkedListNode<int> node = myLList.First.Next;
+        
+        LinkedListNode<int> node = myLList.First;
+        if (n < node.Value)
+        {
+            return myLList.AddFirst(n);
+        }
+
+        if (myLList.Count == 1 && n > node.Value)
+        {
+            return myLList.AddAfter(node, n);
+        }
+        node = node.Next;
         while (node != myLList.Last)
         {
             if (n > node.Previous.Value && n < node.Value)
