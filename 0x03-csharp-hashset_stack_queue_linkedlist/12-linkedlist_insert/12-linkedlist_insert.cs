@@ -5,6 +5,10 @@ class LList
 {
     public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)
     {
+        if (myLList.Count == 0)
+        {
+            return myLList.AddFirst(n);
+        }
         LinkedListNode<int> node = myLList.First.Next;
         while (node != myLList.Last)
         {
