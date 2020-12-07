@@ -23,7 +23,7 @@ class LList
         node = node.Next;
         while (node != myLList.Last)
         {
-            if (n > node.Previous.Value && n < node.Value)
+            if (n > node.Previous.Value && n <= node.Value)
             {
                 return myLList.AddBefore(node, n);
             }
