@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Except : Exception
+class Except
 {
     public static void ThrowMsg(string msg)
     {
