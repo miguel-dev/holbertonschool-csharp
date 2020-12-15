@@ -10,7 +10,6 @@ class Int
         }
         catch (DivideByZeroException) {
             Console.WriteLine("Cannot divide by zero");
-            b = 0;
         }
         finally {
             Console.WriteLine($"{a} / {b} = {q}", a, b, q);
