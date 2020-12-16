@@ -6,7 +6,7 @@ namespace Enemies
     public class Zombie
     {
         /* Gets or sets the health. */
-        private int health {get; set;}
+        private int health;
 
         /// <summary>Initializes a new instance of Zombie.</summary>
         public Zombie ()
