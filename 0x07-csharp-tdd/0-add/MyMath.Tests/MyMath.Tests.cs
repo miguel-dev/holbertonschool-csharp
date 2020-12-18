@@ -11,11 +11,13 @@ namespace MyMath.Tests
         {
         }
 
-        [Test]
-        public void isSum()
+        [TestCase(5, 2, 7)]
+        [TestCase(7, -3, 4)]
+        [TestCase(3, -7, -4)]
+        [TestCase(3, 0, 3)]
+        public void isSum(int a, int b, int sum)
         {
-            var sum = Operations.Add(5, 3);
-            Assert.AreEqual(sum, 5 + 3);
+            Assert.AreEqual(sum, Operations.Add(a, b));
         }
     }
 }
