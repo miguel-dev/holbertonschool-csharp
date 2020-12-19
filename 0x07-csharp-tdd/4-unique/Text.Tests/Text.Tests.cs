@@ -10,9 +10,27 @@ namespace Text.Tests
         }
 
         [Test]
+        public void Test_Empty()
+        {
+            Assert.AreEqual(-1, Str.UniqueChar(string.Empty));
+        }
+
+        [Test]
         public void Test_First_Unique()
         {
             Assert.AreEqual(0, Str.UniqueChar("house"));
+        }
+
+        [Test]
+        public void Test_Unique_Middle()
+        {
+            Assert.AreEqual(2, Str.UniqueChar("velvet"));
+        }
+
+        [Test]
+        public void Test_Unique_End()
+        {
+            Assert.AreEqual(2, Str.UniqueChar("eel"));
         }
 
         [Test]
