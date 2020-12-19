@@ -27,6 +27,20 @@ namespace MyMath.Tests
         }
 
         [Test]
+        public void Text_Max_Beginning()
+        {
+            List<int> list = new List<int>() {4, 3, 2, 1};
+            Assert.AreEqual(4, Operations.Max(list));
+        }
+
+        [Test]
+        public void Text_Max_Middle()
+        {
+            List<int> list = new List<int>() {1, 2, 4, 3};
+            Assert.AreEqual(4, Operations.Max(list));
+        }
+
+        [Test]
         public void Test_Max_For_Negatives()
         {
             List<int> list = new List<int>() {-4, -3, -2, -1};
