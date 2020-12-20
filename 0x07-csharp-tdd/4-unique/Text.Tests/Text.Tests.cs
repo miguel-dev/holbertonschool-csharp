@@ -2,6 +2,7 @@ using NUnit.Framework;
 
 namespace Text.Tests
 {
+    [TestFixture]
     public class Tests
     {
         [SetUp]
