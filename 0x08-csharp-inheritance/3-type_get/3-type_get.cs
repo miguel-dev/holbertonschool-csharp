@@ -2,7 +2,7 @@
 using System.Reflection;
 using System.Collections.Generic;
 
-/// <summary>Contains a method that prints available properties and 
+/// <summary>Contains a method that prints available properties and
 /// methods of an object.
 /// </summary>
 class Obj
@@ -11,8 +11,8 @@ class Obj
     public static void Print(object myObj)
     {
         TypeInfo t_info = myObj.GetType().GetTypeInfo();
-        IEnumerable<PropertyInfo> properties = t_info.DeclaredProperties;
-        IEnumerable<MethodInfo> methods = t_info.DeclaredMethods;
+        IEnumerable<PropertyInfo> properties = myObj.GetType().GetProperties();
+        IEnumerable<MethodInfo> methods = myObj.GetType().GetMethods();
 
         Console.WriteLine("{0} Properties:", t_info.Name);
         
