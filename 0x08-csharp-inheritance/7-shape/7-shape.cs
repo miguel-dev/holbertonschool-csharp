@@ -65,6 +65,7 @@ class Rectangle : Shape
         return width * height;
     }
 
+    /// <summary>ToString override method</summary>
     public override string ToString()
     {
         return String.Format($"[Rectangle] {width} / {height}", width, height);
