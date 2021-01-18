@@ -9,6 +9,11 @@ class VectorMath
         int length = vector.Length;
         double magnitude = 0;
 
+        if (vector == null)
+        {
+            return -1;
+        }
+
         if (length == 2)
         {
 
