@@ -1,7 +1,9 @@
 ﻿using System;
 
+/// <summary>Class for vector operations</summary>
 class VectorMath
 {
+    /// <summary>Calculates the magnitude of a Vector</summary>
     public static double Magnitude(double[] vector)
     {
         int length = vector.Length;
