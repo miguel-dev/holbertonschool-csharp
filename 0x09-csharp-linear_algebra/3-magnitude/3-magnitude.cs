@@ -17,7 +17,7 @@ class VectorMath
         else if (length == 3)
         {
             magnitude = Math.Sqrt(Math.Pow(vector[0], 2.0) + Math.Pow(vector[1], 2.0) + Math.Pow(vector[2], 2.0));
-            return magnitude = Math.Round(magnitude, 1, MidpointRounding.ToEven);
+            return Math.Round(magnitude, 1, MidpointRounding.ToEven);
         }
         else
         {
