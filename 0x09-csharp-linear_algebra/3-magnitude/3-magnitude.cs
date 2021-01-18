@@ -7,7 +7,7 @@ class VectorMath
     public static double Magnitude(double[] vector)
     {
         int length = vector.Length;
-        int magnitude;
+        double magnitude;
 
         if (length == 2)
         {
