@@ -6,13 +6,15 @@ class VectorMath
     /// <summary>Calculates the magnitude of a Vector</summary>
     public static double Magnitude(double[] vector)
     {
-        int length = vector.Length;
+        int length = 0;
         double magnitude = 0;
 
         if (vector == null)
         {
             return -1;
         }
+
+        length = vector.Length;
 
         if (length == 2)
         {
