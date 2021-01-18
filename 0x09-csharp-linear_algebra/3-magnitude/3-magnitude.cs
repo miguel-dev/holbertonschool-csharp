@@ -7,7 +7,7 @@ class VectorMath
     public static double Magnitude(double[] vector)
     {
         int length = vector.Length;
-        double magnitude;
+        double magnitude = -1;
 
         if (length == 2)
         {
@@ -21,7 +21,7 @@ class VectorMath
         }
         else
         {
-            return -1.0;
+            return Math.Round(magnitude, 1, MidpointRounding.ToEven);
         }
     }
 }
