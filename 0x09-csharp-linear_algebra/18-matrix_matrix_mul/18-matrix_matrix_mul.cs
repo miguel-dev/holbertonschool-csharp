@@ -18,13 +18,10 @@ class MatrixMath
                 for (int c = 0; c < cols1; c++)
                 {
                     int j = 0;
-                    for (int i = 0; i < rows2; i++)
+                    for (int i = 0; i < rows2 && j < cols1; i++)
                     {
-                        if (j < cols1)
-                        {
                             matrix[r, c] += matrix1[r, j] * matrix2[i, c];
                             j++;
-                        }
                     }
                 }
             }
