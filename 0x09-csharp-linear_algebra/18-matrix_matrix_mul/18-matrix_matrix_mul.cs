@@ -13,9 +13,9 @@ class MatrixMath
 
         if (cols1 == rows2)
         {
-            for (int r = 0; r < rows2; r++)
+            for (int r = 0; r < rows1; r++)
             {
-                for (int c = 0; c < cols1; c++)
+                for (int c = 0; c < cols2; c++)
                 {
                     for (int i = 0; i < rows2; i++)
                     {
