@@ -8,7 +8,7 @@ class MatrixMath
         int columns = matrix.GetLength(1);
         double[,] transpose = new double[columns, rows];
 
-        if (matrix.Length == 0)
+        if (matrix.GetLength(0) == 0 || matrix.GetLength(1) == 0)
             return matrix;
 
         for (int i = 0; i < rows; i++)
