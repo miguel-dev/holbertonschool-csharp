@@ -20,10 +20,10 @@ class MatrixMath
             return error;
         }
 
-        inverse[0, 0] = matrix[1, 1] / ((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]));
-        inverse[0, 1] = -matrix[0, 1] / ((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]));
-        inverse[1, 0] = -matrix[1, 0] / ((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]));
-        inverse[1, 1] = matrix[0, 0] / ((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]));
+        inverse[0, 0] = Math.Round(matrix[1, 1] / ((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0])), 2);
+        inverse[0, 1] = Math.Round(-matrix[0, 1] / ((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0])), 2);
+        inverse[1, 0] = Math.Round(-matrix[1, 0] / ((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0])), 2);
+        inverse[1, 1] = Math.Round(matrix[0, 0] / ((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0])), 2);
 
         return inverse;
     }
